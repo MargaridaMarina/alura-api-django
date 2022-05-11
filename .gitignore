@@ -1,1 +1,3 @@
 *.pyc
+/site_receitas
+/static
