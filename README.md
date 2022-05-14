@@ -5,11 +5,11 @@
 $ pipenv shell
 $ pipenv install --dev
 ```
-## Criando projeto
+## Criando projeto de receitas
 ```
 $ django-admin startproject alurareceitas .
 ```
-## Criando app
+## Criando app de receitas
 ```
 $ python manage.py startapp receitas
 ```
@@ -29,6 +29,13 @@ $ docker run -p 5432:5432 -e POSTGRES_PASSWORD=insertyourpasswordhere postgres:1
 ```
 $ python manage.py createsuperuser
 ```
-
+## Criando projeto de usuários
+```
+$ django-admin startproject alurareceitas .
+```
+## Criando app de usuários
+```
+$ python manage.py startapp pessoas
+```
 
 
