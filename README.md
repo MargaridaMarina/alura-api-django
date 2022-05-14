@@ -3,8 +3,7 @@
 ## Instalando dependências
 ```
 $ pipenv shell
-$ pip install Django
-$ pip freeze
+$ pipenv install --dev
 ```
 ## Criando projeto
 ```
@@ -22,4 +21,10 @@ $ python manage.py runserver
 ```
 $ python manage.py collectstatic
 ```
+## Subindo imagem postgres
+```
+$ docker run -p 5432:5432 -e POSTGRES_PASSWORD=insertyourpasswordhere postgres:10
+```
+
+
 
