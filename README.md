@@ -25,6 +25,10 @@ $ python manage.py collectstatic
 ```
 $ docker run -p 5432:5432 -e POSTGRES_PASSWORD=insertyourpasswordhere postgres:10
 ```
+## Criando usuário
+```
+$ python manage.py createsuperuser
+```
 
 
 
