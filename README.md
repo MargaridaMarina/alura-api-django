@@ -13,18 +13,6 @@ $ django-admin startproject alurareceitas .
 ```
 $ python manage.py startapp receitas
 ```
-## Subindo servidor
-```
-$ python manage.py runserver
-```
-## Fazendo cópia dos arquivos estáticos
-```
-$ python manage.py collectstatic
-```
-## Subindo imagem postgres
-```
-$ docker run -p 5432:5432 -e POSTGRES_PASSWORD=insertyourpasswordhere postgres:10
-```
 ## Criando usuário
 ```
 $ python manage.py createsuperuser
@@ -37,5 +25,24 @@ $ django-admin startproject alurareceitas .
 ```
 $ python manage.py startapp pessoas
 ```
+## Subindo servidor
+```
+$ python manage.py runserver
+```
+## Fazendo cópia dos arquivos estáticos
+```
+$ python manage.py collectstatic
+```
+## Criando volume e rodando imagem postgres
+```
+$ docker volume create pgdata
+$ docker run -v pgdata:/var/lib/postgresql/data -p 5432:5432 -e POSTGRES_PASSWORD=insertyourpw postgres:10
+```
+## Passando informações do modelo para o banco de dados
+```
+$ python manage.py makemigrations
+$ python manage.py migrate
+```
+
 
 
