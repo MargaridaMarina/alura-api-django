@@ -27,7 +27,7 @@ $ python manage.py startapp pessoas
 ```
 ## Subindo servidor
 ```
-$ python manage.py runserver
+$ exec ./manage.py runserver localhost:8005
 ```
 ## Fazendo cópia dos arquivos estáticos
 ```
@@ -36,7 +36,7 @@ $ python manage.py collectstatic
 ## Criando volume e rodando imagem postgres
 ```
 $ docker volume create pgdata
-$ docker run -v pgdata:/var/lib/postgresql/data -p 5432:5432 -e POSTGRES_PASSWORD=insertyourpw postgres:10
+$ docker run -v pgdata:/var/lib/postgresql/data -p 8006:5432 -e POSTGRES_PASSWORD=insertyourpw postgres:10
 ```
 ## Passando informações do modelo para o banco de dados
 ```
