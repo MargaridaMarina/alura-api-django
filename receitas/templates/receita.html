@@ -30,29 +30,11 @@
             </div>
         </div>
     </div>
+    
+    {% include 'partials/_busca.html' %}
 
-    {% include 'partials/menu.html' %}
-
-        <!-- Receipe Post Search -->
-        <div class="receipe-post-search mb-80">
-            <div class="container">
-                <form action="#" method="post">
-                    <div class="row">
-                        <div class="col-12 col-lg-5">
-                            <select name="select1" id="select1">
-                                <option value="1">Comida típica brasileira</option>
-                                <option value="1">Massas</option>
-                                <option value="1">Veganas</option>
-                            </select>
-                        </div>
-                        <div class="col-12 col-lg-2 text-right">
-                            <button type="submit" class="btn delicious-btn">Buscar</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-
+    {% include 'partials/_menu.html' %}
+    
         <!-- Receipe Slider -->
         <div class="container">
             <div class="row">
@@ -107,5 +89,5 @@
                 </div>
                 <!-- Ingredientes -->
 
-        {% include 'partials/footer.html' %}
+        {% include 'partials/_footer.html' %}
 {% endblock %}
